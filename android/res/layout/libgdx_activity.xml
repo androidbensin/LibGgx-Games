@@ -12,18 +12,36 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/controlLayout"/>
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/controlLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/LightPink"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
         <Button
             android:id="@+id/leftButton"
-            android:layout_width="100dp"
-            android:layout_height="50dp" />
-    </LinearLayout>
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="Left"/>
+        <Button
+            android:id="@+id/jumpButton"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:text="Jump"/>
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Right"/>
+    </RelativeLayout>
 
 </RelativeLayout>

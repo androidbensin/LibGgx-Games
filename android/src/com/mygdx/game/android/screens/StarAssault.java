@@ -7,8 +7,18 @@ import com.badlogic.gdx.Game;
  */
 public class StarAssault extends Game{
 
+    GameScreen gameScreen = null;
     @Override
     public void create() {
-        setScreen(new GameScreen());
+        gameScreen = new GameScreen();
+        setScreen(gameScreen);
+    }
+
+    public void onActionPressed(int keyCode) {
+        gameScreen.keyDown(keyCode);
+    }
+
+    public void onActionReleased(int keyCode) {
+        gameScreen.keyUp(keyCode);
     }
 }
