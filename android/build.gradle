@@ -15,6 +15,28 @@ android {
     }
 }
 
+apply plugin: 'android-apt'
+
+String androidAnnotationsVersion = '3.0.1'
+
+apt {
+    arguments {
+        logLevel 'info'
+        androidManifestFile variant.processResources.manifestFile
+        resourcePackageName 'com.mygdx.game.android'
+    }
+}
+configurations { natives }
+
+dependencies {
+    compile project(":core")
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:20.+'
+    apt "org.androidannotations:androidannotations:${androidAnnotationsVersion}"
+    compile "org.androidannotations:androidannotations-api:${androidAnnotationsVersion}"
+}
+
+
 // needed to add JNI shared libraries to APK when compiling on CLI
 tasks.withType(com.android.build.gradle.tasks.PackageApplication) { pkgTask ->
     pkgTask.jniFolders = new HashSet<File>()

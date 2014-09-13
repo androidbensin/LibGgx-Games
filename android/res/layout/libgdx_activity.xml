@@ -12,12 +12,18 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/controlLayout"/>
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/controlLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#527"
-        android:layout_alignParentBottom="true">
-    </RelativeLayout>
+        android:background="@color/LightPink"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
 
 </RelativeLayout>
