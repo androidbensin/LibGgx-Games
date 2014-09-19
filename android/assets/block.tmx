@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="image" tilewidth="64" tileheight="64">
+  <image source="image.axd.png" width="512" height="512"/>
+  <tile id="15">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1cEJwCAMBdCM0KP7T9oFWmohxiDv8E6CieQHR0QMAAAAAOBI14vdfUFH9oUsK3Mkp3zlIfu+ipydmGF72m/2mfk23/Py8TczFXVmz1e/daZW9z2o7q8iO0937fjDMYOubtvo5vE=
+  </data>
+ </layer>
+</map>

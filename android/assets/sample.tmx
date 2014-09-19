@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Tile" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <tileoffset x="1" y="0"/>
+  <image source="image.axd.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1sEJwCAQBMArLB3Yfz9pIEgkJ3eRecxPcVdFHBExAAAAAIAjXBPV2VYyr4yvzp+9D9U59HnuUp1Bh3Pu1Akd9OhHjz68Vb1k9Jj9r7PPe+caX3q8mbsra/UdAuCfbkPx2EQ=
+  </data>
+ </layer>
+</map>
