@@ -22,7 +22,7 @@ public class BensinController {
     private static final float MAX_JUMP_SPEED	= 7f;
     private static final float DAMP 			= 0.90f;
     private static final float MAX_VEL 			= 4f;
-    private static final float WIDTH = 8f;
+    private static final float WIDTH = 18f;
     private World world;
     private Bensin bensin;
     private long	jumpPressedTime;
