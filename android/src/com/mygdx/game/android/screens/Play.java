@@ -73,7 +73,7 @@ public class Play implements Screen , InputProcessor {
         world = new World();
         float width = Gdx.graphics.getWidth();
         float height = Gdx.graphics.getHeight();
-        map = new TmxMapLoader().load("block.tmx");
+        map = new TmxMapLoader().load("tile-map.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
         camera = new OrthographicCamera();
         //camera.setToOrtho(false , width, height);
