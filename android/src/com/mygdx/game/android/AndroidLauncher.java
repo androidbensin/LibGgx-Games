@@ -10,6 +10,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.mygdx.game.android.screens.StarAssault;
+import com.mygdx.game.android.screens.TestGame;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -30,7 +31,7 @@ public class AndroidLauncher extends AndroidApplication implements View.OnTouchL
     @ViewById(R.id.rightButton)
     Button rightButton;
 
-    private StarAssault gameApp;
+    private TestGame gameApp;
 
     @Override
 	protected void onCreate (Bundle savedInstanceState) {
@@ -45,7 +46,7 @@ public class AndroidLauncher extends AndroidApplication implements View.OnTouchL
         config.useCompass = false;
         config.useWakelock = true;
         config.useGLSurfaceView20API18 = true;
-        gameApp = new StarAssault();
+        gameApp = new TestGame();
         View gameView = initializeForView(gameApp, config);
         gameLayout.addView(gameView);
 
