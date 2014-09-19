@@ -76,8 +76,8 @@ public class Play implements Screen , InputProcessor {
         map = new TmxMapLoader().load("block.tmx");
         renderer = new OrthogonalTiledMapRenderer(map);
         camera = new OrthographicCamera();
-        camera.setToOrtho(false , width, height);
-        camera.update();
+        //camera.setToOrtho(false , width, height);
+        //camera.update();
         controller = new BensinController(world);
         Gdx.input.setInputProcessor(this);
         loadTextures();
@@ -171,7 +171,7 @@ public class Play implements Screen , InputProcessor {
 
 
     private void updateCamera(){
-        camera.position.x = world.getBensin().getPosition().x * ppuX;
+        camera.position.x = world.getBensin().getPosition().x * ppuX + (Gdx.graphics.getWidth() /2);
         camera.update();
     }
 
