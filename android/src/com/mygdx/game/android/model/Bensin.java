@@ -11,7 +11,7 @@ public class Bensin {
 
     public static final float SPEED = 4f;
     public static final float JUMP_VELOCITY = 4f;
-    public static final float SIZE = 0.5f;
+    public static final float SIZE = 1f;
 
     /** Bensin's attributes */
     Vector2 position = new Vector2(); // Bensin's  position in the world. This is expressed in world coordinates
